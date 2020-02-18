@@ -1,4 +1,4 @@
-/* ici sont stockées les donnes avec une structure JSON adaptée au javascript*/
+/* ici sont stockées les données avec une structure JSON adaptée au javascript*/
 
 const data = [
   {
