@@ -1,7 +1,7 @@
 Tableau de bord pour Zozio.
 Auteur : Augustin Rungeard
 
-Pour afficher le tableau de bord, télécharger l'ensemble des fichiers et dossiers sur un répertoire local puis ouvrir dashboard.html avec votre navigateur (Internet Explorer n'est potentiellement pas supporté).
+Pour afficher le tableau de bord, télécharger l'ensemble des fichiers et dossiers sur un répertoire local puis ouvrir dashboard.html avec votre navigateur (Internet Explorer n'est potentiellement pas supporté). Tout le développement s'est effectué sur Firefox, la page y est donc optimisée.
 
 Une connexion internet est requise pour charger les CDN de jquery, muzejs et DataTables.
 
