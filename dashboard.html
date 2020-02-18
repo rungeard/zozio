@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <meta charset="utf-8">
+      <meta name="description" content="Tableau de bord Zozio">
+      <meta name="author" content="Augustin Rungeard">
+      <title>Tableau de bord</title>
+
+      <!-- chargement de notre template css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- templates css pour les graphiques et le tableau -->
+      <link href="https://nightly.datatables.net/css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+      <link href="https://cdn.muzejs.org/lib/muze/core/latest/themes/muze.css" rel="stylesheet">
+      <link href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3875509/utility.css" rel="stylesheet">
+
+      <!-- chargement des scripts js pour les garphiques et le tableau -->
+      <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="https://nightly.datatables.net/js/jquery.dataTables.js"></script>
+      <script src="https://cdn.charts.com/lib/muze/core/latest/muze.js"></script>
+      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3875509/utility.js"></script>
+
+      <!-- chargement de nos données -->
+      <script src="data/data.js"></script>
+
+    </head>
+
+    <body>
+      <div id='bloc_page'>
+	   <header>Tableau de bord - Zozio</header>
+	   <div id="bienvenue">
+	     <th> Bienvenue sur votre Tableau de bord! <br> Pour afficher ou masquer des éléments dans les graphiques, vous pouvez les cocher ou décocher dans la légende. Pour obtenir des informations détaillées, survolez la zone du graphique avec votre souris. Vous pouvez filtrer les éléments du tableau à l'aide des flèches situées à droite de l'intitulé.</th>
+	   </div>
+	   <div id="inner">
+		<div id="gauche">
+		    <div id="chart3"></div>
+		    <div id="chart4"></div>
+		    <div id="chart5"></div>
+		</div>
+		<div id="droite">
+		    <div class="container">
+		      <table id="example" class="display nowrap">
+			<thead>
+			  <tr>
+			    <th>Chariot</th>
+			    <th>Zone</th>
+			    <th>Type</th>
+			    <th>Quantité</th>
+			    <th>sav</th>
+			  </tr>
+			</thead>
+		      </table>
+		    </div>
+		    <div id="chart1"></div>
+		    <div id="chart2"></div>
+		</div>
+		<!-- appel de nos scripts js (possible uniquement une fois les divs déclarées tel que Datatables est codé) -->
+		<script src="javascript/javascript.js"></script>
+	   </div>
+	   <!-- bouton de défilement vers le haut -->
+	   <div id="scrollUp">
+		<a href="#"><img src="images/to_top.png" alt='remonter en haut'/></a>
+	   </div>
+	   <footer>Une réalisation d'Augustin Rungeard - février 2020</footer>
+       </div>  
+    </body>
+</html>
